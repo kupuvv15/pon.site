@@ -1,0 +1,96 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Практична робота №11</title>
+	<link rel="stylesheet" href="assets/other.css">
+</head>
+	<style>
+   body {
+    background: url(assets/img/bg.jpg) no-repeat;
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+   }
+  </style>
+<body>
+	<section class="main">
+		<header>
+			<a href="secret.html"><img src="assets/img/logo.png" class="logo"></a>
+			<div class="hide-on-mobile">
+			<div class="toggle"></div>
+			<ul class="nav">
+				<li><a href="index.html">Головна</a></li>
+				<li><a href="menu.html">Новини</a></li>
+				<li><a href="about_me.html">Про нас</a></li>
+				<li><a href="contact.html">Зв'язок</a></li>
+			</ul>
+		</div>
+			<div class="show-on-mobile">
+			<div class="dropdown">
+	<button onclick="myFunction()" class="dropbtn">Меню</button>
+  	<div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Головна</a>
+    <a href="menu.html">Новини</a>
+    <a href="about_me.html">Про нас</a>
+    <a href="contact.html">Зв'язок</a>
+	</div>
+</header>
+	<div class="hide-on-mobile">
+		<div class="content">
+			<div class="text2">
+				<h2 align="center"><span>Сайт поки в розробці</span><h2>
+			</div>
+			<div class="text">
+				<h2 align="center"><span>Пусто 404</span></h2>
+				<h2 align="center"><span>;(</span></h2>
+			</div>
+		</div>
+	</div>
+		<div class="show-on-mobile">
+			<div class="text2">
+				<h2 align="center"><span>Сайт поки в розробці</span><h2>
+			</div>
+		</div>
+		<div class="show-on-mobile">
+			<div class="text">
+				<h2 align="center"><span>Пусто 404</span></h2>
+				<h2 align="center"><span>;(</span></h2>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<ul class="sci">
+			<li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+			<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+			<li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>
+</body>
+<body>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
